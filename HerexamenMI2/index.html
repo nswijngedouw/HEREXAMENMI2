@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, no cache">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <title>Torens van Hanoï</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="jquery-ui-iconfont-2.2/jquery-ui.icon-font.css">
+
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <!--BEGIN LANDING PAGE-->
+    <div id="login" data-role="page">
+        <div data-role="header">
+            <h1>Torens van Hanoï v1.3</h1>
+        </div>
+        <div id="speel">
+            <a id="start" href="#spel">
+                <p id="go">SPEEL</p>
+            </a>
+
+        </div>
+        <div id="footer" data-role="footer" data-position="fixed">
+            <h6>Nicolas Swijngedouw</h6>
+        </div>
+    </div>
+
+    <!--EINDE LANDING PAGE-->
+
+    <!--BEGIN SPEELBORD-->
+
+    <div id="spel" data-role="page">
+
+        <script src="test.js"></script>
+
+        <div data-role="header" id="control">
+            <a href="#login" id="terug" class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-notext">Back Icon</a>
+            <div id="move" class="move">
+                <p>Aantal moves:</p>
+            </div>
+            <div id="aantal" class="move"></div>
+            <div id="min" class="move">
+
+            </div>
+            <div id="verschil" class="move">
+
+            </div>
+            <a href="help.html" id="info" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext">Info</a>
+
+
+        </div>
+
+
+        <div id="block"></div>
+
+        <div id="speelbord" data-role="main">
+
+
+            <div id="s" class="post" data-post="1"></div>
+            <div id="h" class="post" data-post="2"></div>
+            <div id="g" class="post" data-post="3"></div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!--EINDE SPEELBORD-->
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+body, html
+{
+   overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "courier new", serif;
+ 
+}
+#speelbord
+{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    bottom: 0;
+    
+}
+.ui-page 
+{
+    background-image: url(482719.jpg);
+    background-size : cover;
+   
+}
+
+#help
+{
+     background-image: none;   
+}
+.post
+{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: bisque;
+    height: 50vh;
+    width: 24vw;
+    margin: 0 auto;
+    bottom: 0;
+   
+    
+}
+.sc
+{
+    align-self: flex-end;
+    margin: 0 auto;
+    background-color: black;
+}
+.hoverPost
+{
+    background-color: cadetblue;
+    opacity: 0.9;
+}
+#block
+{
+    width: 24vw;
+    margin: 5vh auto;
+    
+    
+}
+#login
+{
+    margin: 0 auto;
+    background-image: url(482719.jpg) no-repeat center center fixed;
+    
+    
+}
+#speel
+{
+    height: auto;
+    width: 30vw;
+    
+    margin: 30vh auto;
+    align-content: center;
+}
+#speel a
+{
+    text-decoration: none;
+}
+#speel p
+{
+    text-align: center;
+    font-size: 5vw;
+    color:darkorange;
+    text-decoration: none;
+    opacity: 0;
+    z-index: 10000;
+    
+}
+#speel p:hover
+{
+    transition-duration: 1s;
+    color:chartreuse;
+}
+#move
+{
+    width: auto;
+    text-align: center;
+    
+    
+}
+#move p
+{
+    
+    color: black;
+    
+}
+#aantal
+{
+    width: auto;
+    height: auto;
+    margin-right: 5vw;
+    
+}
+#control
+{
+    text-align: center;
+}
+#aantal p
+{
+    font-size: 1.5vh;
+    font-weight: bolder;
+}
+#help
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    
+    
+    
+}
+.move
+{
+    display: inline-flex;
+    align-content: center;
+    margin: 0 auto;
+    width: auto;
+    
+    
+}
+
+#help h2 
+{
+    margin-top: 2.5vh;
+    font-size: 4vw;
+    font-weight: bolder;
+    color:dimgray;
+    text-align: center;
+    
+}
+#help p
+{
+    font-size: 2vw;
+}
