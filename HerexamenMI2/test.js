@@ -2,7 +2,7 @@
 /*jslint node: true */
 "use strict";
 
-var aantal = 0;
+
 
 
 //functie hanoi
@@ -114,7 +114,7 @@ function hanoi(schf) {
     $(palen).click(function () {
         //functie om schijf te kiezen en te verplaatsen
         if (gekozen === null) {
-            //de gebruiker nog geen toren/blok heeft aangeklikt
+            //de gebruiker heeft nog geen toren/blok heeft aangeklikt
     
             if ($(this).children().length > 0) {
                 //zien of de gebruiker geen lege toren heeft aangeklikt
