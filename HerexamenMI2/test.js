@@ -198,7 +198,7 @@ function hanoi(schf) {
     
 
 
-// }
+}
 $(document).ready(function () {
     //laat de tekst "spelen" op landing page verschijnen, zorgt voor duidelijkheid
     $("#go").delay(1000).animate({ opacity: 1 }, 700);
