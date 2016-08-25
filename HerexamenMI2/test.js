@@ -3,10 +3,9 @@
 "use strict";
 
 
-
-
 //functie hanoi
 function hanoi(schf) {
+    //initialisatie van variabelen
     var data = {
         sch: [],
         torens: []
@@ -16,11 +15,11 @@ function hanoi(schf) {
         minSchijf = 3,
         i = 0,
         x = 0,
-        kleuren = ["#00CC99", "#FF9933", "#CC0066", "#006699", "#993300", "#FFFF66", "#FF3300", "#0F3DFF"],
+        kleuren = ["#00CC99", "#FF9933", "#CC0066", "#006699", "#993300", "#FFFF66", "#FF3300", "#0F3DFF"], //kleuren van de schijven
         palen = 'div[data-post]', //alle elementen met data-attribuut selecteren en als paal gebruiken
         gekozen = null, //Bij het opstarten wordt er geen toren gekozen
-        schijfData,
-        targetData,
+        schijfGekozen,
+        targetGekozen,
         paalnr,
         aantalschijven,
         //alle tellers op 0 zetten
@@ -29,8 +28,6 @@ function hanoi(schf) {
         verschil = 0,
         overblijvend = 0;
     
-    
-
     //de gebruiker word terug naar de landing page gestuurd wanneer hij op de "back" knop drukt
     $("#terug").click(function () {
         window.location = "index.html";
@@ -49,10 +46,7 @@ function hanoi(schf) {
             //als het getal aanvaard wordt, deze opslaan
             aantal = getal;
             minimumzetten = Math.pow(2, aantal) - 1; //geeft het aantal "optimale" zetten weer, gelijk aan 2^n-1 met n het aantal schijven
-            
         }
-
-
     }
     
     
@@ -137,14 +131,14 @@ function hanoi(schf) {
 
         } else {
             //als er wel een (niet-lege) toren is aangeklikt, en blok is losgemaakt
-            //blok wordt opgeslagen in "schijfData", meer bepaald het data-attribuut "schijf" van de gekozen schijf
-            schijfData = $(gekozen).data('schijf');
+            //blok wordt opgeslagen in "schijfGekozen", meer bepaald het data-attribuut "schijf" van de gekozen schijf
+            schijfGekozen = $(gekozen).data('schijf');
             
             //slaat de waarde van het data-attribuut "schijf" op
-            targetData = $(this).children().last().data('schijf');
+            targetGekozen = $(this).children().last().data('schijf');
             
             
-            if (schijfData < targetData || targetData === undefined) {
+            if (schijfGekozen < targetGekozen || targetGekozen === undefined) {
                 //nagaan of de gebruiker een grotere schijf op een kleinere wilt verplaatsen
                 
                 //de schijf verplaatsen naar de aangeklikte toren
@@ -189,6 +183,9 @@ function hanoi(schf) {
             $(this).removeClass('hoverPost');
         }
     );
+    
+    //poging om "terug" functie van de browser na te bootsen
+    
     // $(document).on("navigate", function(event, data) {
     // var direction = data.state.direction;
     // if(direction == 'back') {
@@ -210,7 +207,6 @@ $(document).ready(function () {
 //hoofdfunctie
 $('#start').on("click", function () {
     hanoi(aantal);
-
 
 });
 
