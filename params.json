@@ -1,0 +1,6 @@
+{
+  "name": "Herexamenmi2",
+  "tagline": "Dit is mijn eindproject MI2, ",
+  "body": "# Welkom op mijn repository.\r\nOp deze pagina vindt U mijn eindproject MI2 terug. Als thema heb ik het spel \"de Torens van Hanoï\" gekozen, een eeuwenoud spel die als doel heeft schijven op één toren, naar een andere toren te verplaatsen. Hier horen uiteraard regels bij waaraan de gebruiker zich moet houden.\r\n\r\n### Regels\r\nEr mag maar 1 schijf per keer verplaatst worden, en het is ten strengste verboden om een grotere schijf op een kleinere te plaatsen\r\n\r\n### Werking\r\nDe speler klikt een (niet-lege) toren aan, waarna een schijf wordt losgemaakt van de toren. Vervolgens wordt er op (dezelfde of) een andere toren geklikt, waar de schijf naar verplaatst moet worden. De puzzel is opgelost wanneer de schijven op de eerste toren allemaal verplaatst zijn naar de laatste toren.\r\n\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
